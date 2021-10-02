@@ -1,0 +1,260 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    cursor: pointer;
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    padding-top: 52px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    white-space: nowrap;
+    font-weight: 100;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    padding: 14px 16px;
+}
+
+.navbar {
+    background-color: rgba(162, 159, 159, 0.5);
+    padding: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: .5rem 0;
+    list-style: none;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.fg-white {
+    color: #ffffff !important;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+.icon {
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.circle {
+    border: none;
+    margin: 2px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.active {
+    background-color: white;
+    outline: 5px auto black;
+}
+
+.carousel-indicators {
+    margin: 40px;
+}
+
+.items {
+    background-image: url(../bg-red.jpg);
+    background-repeat: repeat;
+    background-position: center 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.separator {
+    padding-bottom: 3px;
+    border-top: 0.5px solid black;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    margin: 0;
+    line-height: 0;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.w-20 {
+    max-width: 20%;
+}
+
+.newcard {
+    padding: 38px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    background-color: #f3f3f4;
+}
+
+    .newcard h2 {
+        white-space: nowrap;
+        margin: 50px 0 20px 0;
+        color: #e60000;
+        font-size: x-large;
+        font-weight: 400;
+    }
+
+.all-itmes {
+    color: rgba(0,0,0,0);
+    height: 16rem;
+    padding: 70px 8px;
+}
+
+.item1 {
+    background-image: url(../insurance_small_slider.png);
+    background-repeat: repeat;
+    background-position: center 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 33.3333%;
+}
+
+    .item1:hover {
+        background: rgba(232, 58, 58, 0.90);
+        color: white;
+    }
+
+.item2 {
+    background-image: url(../enterprise_small_slider.jpg);
+    background-repeat: repeat;
+    background-position: center 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 33.3333%;
+}
+
+    .item2:hover {
+        background: rgba(18, 159, 100, 0.90);
+        color: white;
+    }
+
+.item3 {
+    background-image: url(../cloudservices_small_slider.jpg);
+    background-repeat: repeat;
+    background-position: center 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 33.3333%;
+}
+
+    .item3:hover {
+        background: rgba(68, 216, 224, 0.90);
+        color: white;
+    }

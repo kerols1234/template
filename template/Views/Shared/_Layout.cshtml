@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - template</title>
+    <link rel="stylesheet" href="~/fontawesome\css\all.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light fixed-top border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand  font-weight-bold" asp-area="" asp-controller="Home" asp-action="Index">template</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav flex-grow-1" style=" display: flex; flex-flow: row-reverse;">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" asp-area="" asp-controller="Home" asp-action="Index">Careers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link font-weight-bold dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item">
+                                        Nice Deer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        Ibn Sina
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item">Horus</a></li>
+                                <li><a class="dropdown-item">G-Suite</a></li>
+                                <li><a class="dropdown-item">Salesforce</a></li>
+                                <li><a class="dropdown-item">SOPHOS</a></li>
+                                <li><a class="dropdown-item">Zoho</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link font-weight-bold dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item">
+                                        Business Intelligence
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        Software Development
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item">Mobile Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link font-weight-bold dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                About us
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item">
+                                        Company Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        Vision and Mission
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item">References</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer pt-10">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-inline font-13 pt-2 fg-white mb-0">
+                        <li class="d-inline"><a class="fg-white">Home</a></li>
+                        <li class="d-inline">|</li>
+                        <li class="p-0 d-inline"><a class="fg-white">Careers</a></li>
+                        <li class="d-inline">|</li>
+                        <li class="d-inline"><a class="fg-white">Contact Us</a></li>
+                    </ul>
+                    <p class="fg-white font-13 m-0">All Rights Reserved © 2021 IT-Fusion.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 text-right social-icons-container">
+                    <ul class="list-unstyled float-right pt-3">
+                        <li class="d-inline" style="height:36px;width:36px;">
+                            <a class="icon" style="padding:5px 12px;" href="#" title="Follow with Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="d-inline" style="height:36px;width:36px;">
+                            <a class="icon" href="#" title="Follow with LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
